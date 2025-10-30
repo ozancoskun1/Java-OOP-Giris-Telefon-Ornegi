@@ -31,9 +31,9 @@ public class Telefon {
         sarjYuzdesi = clamp(sarjYuzdesi + miktar);
 
         if (once == 100) {
-            System.out.println("🔋 Şarj zaten %100, dolum yapılmadı.");
+            System.out.println(" Şarj zaten %100, dolum yapılmadı.");
         } else if (sarjYuzdesi == 100) {
-            System.out.println("🔋 Şarj tamamen doldu! (%" + sarjYuzdesi + ")");
+            System.out.println(" Şarj tamamen doldu! (%" + sarjYuzdesi + ")");
         } else {
             System.out.println("Şarj arttı: %" + once + " → %" + sarjYuzdesi);
         }
@@ -46,7 +46,7 @@ public class Telefon {
         sarjYuzdesi = clamp(sarjYuzdesi - miktar);
 
         if (sarjYuzdesi == 0 && once != 0) {
-            System.out.println("⚠️  Şarj bitti, telefon kapandı.");
+            System.out.println("  Şarj bitti, telefon kapandı.");
         } else {
             System.out.println("Şarj azaldı: %" + once + " → %" + sarjYuzdesi);
         }
@@ -68,5 +68,6 @@ public class Telefon {
 
 
 	
+
 
 
